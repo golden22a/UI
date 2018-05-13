@@ -1,0 +1,4 @@
+<input type="text" [(ngModel)]="title" value="{{title}}">
+<button (click)="addTodo()">Save</button>
+<app-todo  *ngFor="let todo of todos" [todo]="todo">
+</app-todo>
