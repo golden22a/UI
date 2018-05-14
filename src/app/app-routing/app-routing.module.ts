@@ -1,8 +1,7 @@
-import { TodoComponent } from './../todo/todo.component';
-import { TodosComponent } from './../todos/todos.component';
+import { TodosComponent } from './../todos-module/todos/todos.component';
+import { UsersComponent } from './../user-module/users/users.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {UsersComponent} from '../users/users.component';
 const routes: Routes = [
       {
         path:'',

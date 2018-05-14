@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {AllTodosService} from '../all-todos.service';
+import {AllTodosService} from '../../all-todos.service';
 import {ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-todos',

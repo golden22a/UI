@@ -1,4 +1,4 @@
-import { UsersService } from './../users.service';
+import { UsersService } from '../../users.service';
 import { Component, OnInit,Input } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 

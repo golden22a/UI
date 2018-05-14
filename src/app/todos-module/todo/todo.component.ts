@@ -1,4 +1,4 @@
-import { AllTodosService } from './../all-todos.service';
+import { AllTodosService } from '../../all-todos.service';
 import { Component, OnInit,Input, Renderer2, ViewChild } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
