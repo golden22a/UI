@@ -8,7 +8,7 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class TodosComponent implements OnInit {
   private todos;
-  private title;
+  private title = "";
   private user_id;
   constructor(private todosService: AllTodosService,private route:ActivatedRoute) { 
   }
@@ -25,6 +25,11 @@ export class TodosComponent implements OnInit {
       this.title="";
     })
     
+  }
+  onEnter(event){
+    if(event.code == "Enter" && this.title.length >=5){
+      this.addTodo();
+    }
   }
 
 }

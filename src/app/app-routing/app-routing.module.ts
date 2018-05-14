@@ -11,10 +11,6 @@ const routes: Routes = [
       {
         path:'users/:id',
         component: TodosComponent
-      },
-      {
-        path:'users/:id/tods/:todo_id',
-        component: TodoComponent
       }
   ];
 

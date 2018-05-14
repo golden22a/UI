@@ -17,5 +17,16 @@ export class AllTodosService {
   removeTodo(id){
     return this.http.delete(`/api/todos/${id}`);
   }
+  updateTodo(id,title){
+    return this.http.patch(`/api/todos/${id}`,{
+    "title":title
+    });
+  }
+  doneTodo(todo){
+    return this.http.patch(`/api/todos/${todo.id}`,{
+      "title":todo.title,
+      "done":true
+      }); 
+  }
 }
   

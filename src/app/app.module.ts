@@ -10,6 +10,8 @@ import { UsersComponent } from './users/users.component';
 import { UserComponent } from './user/user.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { UsersService } from './users.service';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +22,7 @@ import { UsersService } from './users.service';
   ],
   imports: [
     BrowserModule,
+    NgbModule.forRoot(),
     FormsModule,
     AppRoutingModule,
     HttpModule

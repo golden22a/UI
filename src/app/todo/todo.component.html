@@ -1,5 +1,7 @@
-<p *ngIf="todo">
-{{todo.title}} 
-<button (click)="removeTodo()">delete</button>
 
-</p>
+<div class='todo-content' (dblclick)="dbClick($event)" *ngIf="todo" > 
+<input type="checkbox" (click)="doneTodo()"/>
+<input #input type="text" value={{title}} [(ngModel)]="title"  (blur)="blurEvent()" (keyup)="updateTodo($event)" disabled/>
+<i class="fas fa-times" (click)="removeTodo()"></i>
+</div>  
+ 
